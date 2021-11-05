@@ -51,12 +51,7 @@ function checkName() {
                         second_section.classList.remove('hide');
                     }, 1500);
            }
-
-
-
         }
     }
-
-
 }
 
