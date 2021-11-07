@@ -40,12 +40,12 @@ main{
     align-items: center;
 }
 
-#name-section{
+main #name-section{
     text-align: center;
     width: fit-content;
 }
 
-#name-section #input-section{
+main #name-section #input-section{
     margin-top: 1rem;
 
     display: flex;
@@ -54,8 +54,34 @@ main{
     
 }
 
-#como-section{
+main #name-section #input-section input:first-child{
+    width: 8rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+main #name-section #input-section input:last-child{
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main #name-section #input-section input:last-child:hover{
+    cursor: pointer;
+    background: #ffffff3f;
+}
+
+main #como-section{
     margin-top: 5rem;
+    max-width: min(70%, 800px);
 }
 
 footer{
