@@ -15,37 +15,43 @@ body{
     background: #f5f5f5;
 }
 
+h2{
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 1px 1px rgba(109, 109, 109, 0.535);
+}
+
 header{
     margin-top: 15px;
 }
-
 
 header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 header nav ul li{
     cursor: pointer;
     text-align: center;
-
+    width: 110px;
 }
 
-main{
+main, #first-main{
     margin-top: 1rem;
-
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main #name-section{
+#first-main #name-section{
     text-align: center;
     width: fit-content;
 }
 
-main #name-section #input-section{
+#first-main #name-section #input-section{
     margin-top: 1rem;
 
     display: flex;
@@ -54,7 +60,7 @@ main #name-section #input-section{
     
 }
 
-main #name-section #input-section input:first-child{
+#first-main #name-section #input-section input:first-child{
     width: 8rem;
     height: 2rem;
     border: 1px solid #ccc;
@@ -63,7 +69,7 @@ main #name-section #input-section input:first-child{
     font-size: 0.8rem;
 }
 
-main #name-section #input-section input:last-child{
+#first-main #name-section #input-section input:last-child{
     width: 5rem;
     height: 2rem;
     border: 1px solid #ccc;
@@ -74,14 +80,20 @@ main #name-section #input-section input:last-child{
     transition: all 0.3s ease-in-out;
 }
 
-main #name-section #input-section input:last-child:hover{
+#first-main #name-section #input-section input:last-child:hover{
     cursor: pointer;
     background: #ffffff3f;
 }
 
-main #como-section{
-    margin-top: 5rem;
-    max-width: min(70%, 800px);
+#first-main #como-section{
+    margin-top: 4rem;
+    max-width: min(60%, 600px);
+}
+
+main{
+    border: 1px solid #ccc;
+    margin: 10px;
+    height: 300px;
 }
 
 footer{
@@ -90,6 +102,11 @@ footer{
     text-align: center;
     bottom: 0;
     
-    padding: 20px 0;
+    padding: 13px 0;
     width: 100%;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: rgb(123, 123, 123);
 }
