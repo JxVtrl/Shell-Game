@@ -2,6 +2,8 @@ const nameBox = document.getElementById('name');
 const insira = document.getElementById('insira');
 const first_section = document.getElementById('first-section');
 const second_section = document.getElementById('second-section');
+const user_name_nav = document.getElementById('user-name-nav');
+var userName = ''
 
 const valid_letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', " "];
 
@@ -43,13 +45,16 @@ function checkName() {
            if(valid) {
                nameBox.style.border = "1px solid green";
                // Save name in localStorage
-                    localStorage.setItem('name', name);
+               localStorage.setItem('name', name);
 
-                    setTimeout(() => {
-                        console.log('Nome: ' + localStorage.getItem('name'))
-                        first_section.classList.add('hide');
-                        second_section.classList.remove('hide');
-                    }, 1500);
+               // Save name in userName Variable
+               userName = localStorage.getItem('name');
+               user_name_nav.innerHTML = userName;
+
+                setTimeout(() => {
+                    first_section.classList.add('hide');
+                    second_section.classList.remove('hide');
+                }, 1500);
            }
         }
     }
