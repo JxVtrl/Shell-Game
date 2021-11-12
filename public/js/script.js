@@ -1,11 +1,12 @@
+const valid_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', " "]
 const nameBox = document.getElementById('name');
 const insira = document.getElementById('insira');
+
 const first_section = document.getElementById('first-section');
 const second_section = document.getElementById('second-section');
 const user_name_nav = document.getElementById('user-name-nav');
-var userName = ''
 
-const valid_letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', " "];
+var userName = ''
 
 function checkName() {
     var name = nameBox.value
@@ -60,3 +61,15 @@ function checkName() {
     }
 }
 
+const nivel_container = document.getElementById('nivel-container');
+const start_container = document.getElementById('start-container');
+const game_container = document.getElementById('game-container');
+
+function startGame() {
+    nivel_container.classList.remove('hide');
+    game_container.classList.remove('hide');
+    start_container.classList.add('hide');
+
+
+
+}
