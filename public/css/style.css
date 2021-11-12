@@ -96,6 +96,19 @@ main{
     height: 300px;
 }
 
+main #start-container{
+    
+    margin-top: 2rem;
+}
+
+main #start-container input{
+    width: 100%;
+    height: 2rem;
+    padding: 2px;
+    
+
+}
+
 footer{
     cursor: pointer;
     position: absolute;
