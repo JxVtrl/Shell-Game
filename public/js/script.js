@@ -103,7 +103,6 @@ function startGame() {
                     randomizeCups()
                 }, 1200);
             }
-        
         }
     }
 }
